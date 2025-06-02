@@ -1,3 +1,10 @@
+# Notes for debian/pop_os/ubuntu users...
+
+Chances are the version of I3 you will get from `sudo apt install i3` is quite old and the configuration might not work.
+It's probably due to the fact that I3-gaps was merged with i3 in 2022,adding new features and new possibilities in the config.
+Make sure you get the latest version.
+You can find more detailed instructions [here.](https://i3wm.org/docs/repositories.html)
+
 # Installation
 
 Git clone this repo in your ~/.config/i3
@@ -10,7 +17,7 @@ Install the following depencies
 
 > Xorg and I3 
 # Optional
-> I3 Gaps
+
 > Polybar
 
 I don't use any bar but I will leave this here just in case.
