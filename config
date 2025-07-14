@@ -31,7 +31,6 @@ default_floating_border pixel 1
 # start rofi (a program launcher)
 bindsym $mod+o exec --no-startup-id rofi -show drun
 bindsym $mod+/ exec --no-startup-id rofi -show combi
-bindsym $mod+Tab exec --no-startup-id rofi -show window
 
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
@@ -62,6 +61,9 @@ bindsym $mod+Return exec alacritty
 # kill focused window
 bindsym $mod+Shift+q kill
 
+bindsym $mod+Shift+Tab move scratchpad
+# Show the first scratchpad window
+bindsym $mod+Tab scratchpad show
 
 # change focus
 bindsym $mod+h focus left
@@ -146,9 +148,9 @@ bindsym $mod+Shift+ccedilla move container to workspace number $ws9
 bindsym $mod+Shift+agrave move container to workspace number $ws10
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
+bindsym $mod+Shift+r reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
+bindsym $mod+Shift+c restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
